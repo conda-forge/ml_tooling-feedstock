@@ -20,9 +20,8 @@ for plotting and viz as well as standardised interfaces for training and testing
 Current build status
 ====================
 
-![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
-![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ml_tooling-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ml_tooling-feedstock)
 
 Current release info
 ====================
