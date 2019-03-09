@@ -9,8 +9,8 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 63e4d2dd1560f6093482c550125a74bf8e5729745a662dcdac42473360598468
 build:
-  number: 0
-  skip: true  # [py>=36]
+  number: 1
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
