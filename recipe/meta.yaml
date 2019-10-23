@@ -15,22 +15,22 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - pandas
-    - numpy
     - scikit-learn
-    - gitpython
     - matplotlib
     - pyyaml
     - joblib
+    - attrs
 
 test:
   imports:
     - ml_tooling
     - ml_tooling.plots
+    - ml_tooling.data
 
 about:
   home: http://github.com/andersbogsnes/ml_tooling
