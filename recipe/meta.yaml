@@ -1,5 +1,5 @@
 {% set name = "ml_tooling" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f8bee339fd169b82ea5cc3cb846c28b82dc49720f33c3e3561e197346ec633e1
+  sha256: 809ca1bfa8349db8c620bd34b46fe3331f2d9b0bee2b027ba60bc5857c3c108f
 build:
   number: 0
   noarch: python
