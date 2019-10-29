@@ -15,17 +15,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - pandas
-    - numpy
     - scikit-learn
-    - gitpython
     - matplotlib
     - pyyaml
     - joblib
+    - sqlalchemy
+    - attrs
+
 
 test:
   imports:
