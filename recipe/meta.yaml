@@ -1,5 +1,5 @@
 {% set name = "ml_tooling" %}
-{% set version = "0.6.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -15,16 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - pandas
-    - numpy
     - scikit-learn
-    - gitpython
     - matplotlib
     - pyyaml
+    - joblib
+    - sqlalchemy
+    - attrs
 
 test:
   imports:
