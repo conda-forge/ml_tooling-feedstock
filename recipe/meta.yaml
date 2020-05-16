@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 5f0213f52cd8cff1ec9dc56aa7f21964a2af6c4f050ab83c1f567fa7afad72d9
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
     - pandas
     - scikit-learn
-    - matplotlib
+    - matplotlib-base
     - pyyaml
     - joblib
     - sqlalchemy
