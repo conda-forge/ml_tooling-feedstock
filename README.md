@@ -5,7 +5,7 @@ Home: http://github.com/andersbogsnes/ml_tooling
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Modelling framework to simplify machine learning workflows
 
