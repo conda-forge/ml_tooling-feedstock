@@ -1,5 +1,5 @@
 {% set name = "ml_tooling" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b568373eabc42ea457c4bf3e1bfed031c1bccdbfa34364b58d0fb68038f9806
+  sha256: f2434092c971ce020bff69b603b387807dba2afc4f25784a054843368ef87bc5
 build:
   number: 0
   noarch: python
@@ -20,6 +20,8 @@ requirements:
   run:
     - python >=3.7
     - pandas
+    - numpy
+    - scikit-optimize
     - scikit-learn
     - matplotlib-base
     - pyyaml
@@ -32,6 +34,9 @@ test:
   imports:
     - ml_tooling
     - ml_tooling.plots
+    - ml_tooling.data
+    - ml_tooling.storage
+    - ml_tooling.transformers
 
 about:
   home: http://github.com/andersbogsnes/ml_tooling
