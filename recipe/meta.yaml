@@ -20,6 +20,8 @@ requirements:
   run:
     - python >=3.7
     - pandas
+    - numpy
+    - scikit-optimize
     - scikit-learn
     - matplotlib-base
     - pyyaml
@@ -32,6 +34,9 @@ test:
   imports:
     - ml_tooling
     - ml_tooling.plots
+    - ml_tooling.data
+    - ml_tooling.storage
+    - ml_tooling.transformers
 
 about:
   home: http://github.com/andersbogsnes/ml_tooling
