@@ -6,19 +6,19 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f2434092c971ce020bff69b603b387807dba2afc4f25784a054843368ef87bc5
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pandas
     - numpy
     - scikit-optimize
@@ -31,6 +31,8 @@ requirements:
 
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ml_tooling
     - ml_tooling.plots
